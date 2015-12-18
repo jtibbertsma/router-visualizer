@@ -31,16 +31,32 @@ $ brew install gprof2dot
 
 Rails.application.routes.draw do
   # ...
-
-  if Rails.env.development?
-    mount RouterVisualizer::Engine, at: "/routes"
-  end
-
+  visualize
   # ...
 end
 ```
 
 Then you can navigate to `localhost:3000/routes` to see the visualization.
+
+You can mount the visualizer at whatever route you want:
+
+```ruby
+Rails.application.routes.draw do
+  # ...
+  visualize at: 'nfa_visualization'
+  # ...
+end
+```
+
+By default, the visualization route will only be defined in development. If for some reason you want the route to be defined in other environments, you can use `groups` option:
+
+```ruby
+Rails.application.routes.draw do
+  # ...
+  visualize groups: ['development', 'staging']
+  # ...
+end
+```
 
 ## What is the point of this?
 
