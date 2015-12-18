@@ -21,7 +21,7 @@ $ brew install gprof2dot
 ```ruby
 # config/routes.rb
 
-Rails.application.routes.draw
+Rails.application.routes.draw do
   # ...
 
   if Rails.env.development?
