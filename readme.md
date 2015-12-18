@@ -33,12 +33,14 @@ Rails.application.routes.draw do
   # ...
 
   if Rails.env.development?
-    mount RouterVisualizer::Engine, at: "routes"
+    mount RouterVisualizer::Engine, at: "/routes"
   end
 
   # ...
 end
 ```
+
+Then you can navigate to `localhost:3000/routes` to see the visualization.
 
 ## What is the point of this?
 
