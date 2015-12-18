@@ -6,5 +6,5 @@ task :build do
 end
 
 task :release => :build do  
-  system "gem push router-visualizer-#{Bunder::VERSION}"
+  system "gem push router-visualizer-#{RouterVisualizer::VERSION}"
 end  
