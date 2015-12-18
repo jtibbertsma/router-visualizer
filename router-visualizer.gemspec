@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
   gem.files          = `git ls-files`.split($/)
   gem.require_paths  = ['lib']
 
-  gem.add_dependency 'railties', '>= 4.0'
+  gem.add_dependency 'rails', '>= 4.0'
 end
