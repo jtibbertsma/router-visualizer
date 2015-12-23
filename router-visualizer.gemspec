@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.version        = RouterVisualizer::VERSION
   gem.authors        = ["Joseph Tibbertsma"]
   gem.email          = ["josephtibbertsma@gmail.com"]
-  gem.description    = "Shows a NFA visualization of a rails application's router"
+  gem.description    = "Shows an NFA visualization of a rails application's router"
   gem.summary        = gem.description
   gem.homepage       = "https://github.com/jtibbertsma/router-visualizer"
   gem.license        = 'MIT'
