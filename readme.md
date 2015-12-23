@@ -48,7 +48,7 @@ Rails.application.routes.draw do
 end
 ```
 
-By default, the visualization route will only be defined in development. If for some reason you want the route to be defined in other environments, you can use `groups` option:
+By default, the visualization route will only be defined in development. If for some reason you want the route to be defined in other environments, you can use the `groups` option:
 
 ```ruby
 Rails.application.routes.draw do
